@@ -27,7 +27,7 @@ b0 + b1
 ```
 Quin resultat obtenim? Per què? De quin tipus de dada és la variable temporal creada per jshell?
 
-//TODO
+El resultat que obtenim és 136. La dada temporal creada per jshell és un integer.
 
 #### Pregunta 2
 
@@ -41,7 +41,7 @@ int n = c;
 ```
 Quin resultat obtens? Per què?
 
-//TODO
+El resultat que obtenim és 97, perquè és el número que li correspon a la a en la taula ascii i perquè el jshell està programat per assignar-l'ho
 
 Ara, declara una variable de tipus _short_, anomenada s, i assigna-li el valor de la variable c:
 ```
@@ -49,7 +49,7 @@ short s = c;
 ```
 Per què ara el resultat obtingut és diferent que en el cas anterior?
 
-//TODO
+Perquè és //TODO
 
 #### Pregunta 3
 
@@ -59,7 +59,7 @@ short s = (short)c;
 ```
 Com s'anomena això que estem fent amb la variable c? Quin resultat obtenim ara? Per què (què està passant)?
 
-//TODO
+Aquest procès s'anomena "casting". El resultat que obtenim és 97 perquè la variable "c" ha sigut forçada, és a dir, que la variable "c" es com si fos una variable de tipus short (forçada per el casting).
 
 
 #### Pregunta 4
@@ -75,7 +75,7 @@ short s = (short)35000;
 
 Quins resultats obtens? Per què?
 
-//TODO
+A la primera execució obtenim s = 32000 (és a dir, que l'agafa perquè el tipus de dada de short té un interval i aquest resultat esta dins d'aquest interval), a la segona execució obtenim -30536 perquè el 35000 està fora del interval del short, al fer el casting estem ficant un integer a un short travès d'un casting. Quan fem el casting estem fent 
 
 #### Pregunta 5
 
