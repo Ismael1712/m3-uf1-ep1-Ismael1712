@@ -75,7 +75,7 @@ short s = (short)35000;
 
 Quins resultats obtens? Per què?
 
-A la primera execució obtenim s = 32000 (és a dir, que l'agafa perquè el tipus de dada de short té un interval i aquest resultat esta dins d'aquest interval), a la segona execució obtenim -30536 perquè el 35000 està fora del interval del short, al fer el casting estem retallant bits, al fer això ens queda un 1 a la esquerra dels bits, si és un 1 el número que ens dona és negatiu, si és zero el número . Quan fem el casting estem fent 
+A la primera execució obtenim s = 32000 (és a dir, que l'agafa perquè el tipus de dada de short té un interval i aquest resultat esta dins d'aquest interval), a la segona execució obtenim -30536 perquè el 35000 està fora del interval del short, al fer el casting estem retallant bits, al fer això ens queda un 1 a la esquerra dels byte, si és un 1 el número que ens dona és negatiu, si és zero el número . Quan fem el casting estem fent retallant bits. 
 
 #### Pregunta 5
 
@@ -90,7 +90,7 @@ var v0 = 5;
 
 De quin tipus de dada són les variables v i v0?
 
-//TODO
+El var v = 5.0 és un tipus de dada float, el var v0 = 5 és un tipus de dada float.
 
 Ara, executa:
 ```
