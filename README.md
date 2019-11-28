@@ -59,7 +59,7 @@ short s = (short)c;
 ```
 Com s'anomena això que estem fent amb la variable c? Quin resultat obtenim ara? Per què (què està passant)?
 
-Aquest procès s'anomena "casting". El resultat que obtenim és 97 perquè la variable "c" ha sigut forçada, és a dir, que la variable "c" es com si fos una variable de tipus short (forçada per el casting).
+Aquest procès s'anomena "casting". El resultat que obtenim és 97 perquè la variable "c" ha sigut forçada, és a dir, que en bits 
 
 
 #### Pregunta 4
@@ -75,7 +75,7 @@ short s = (short)35000;
 
 Quins resultats obtens? Per què?
 
-A la primera execució obtenim s = 32000 (és a dir, que l'agafa perquè el tipus de dada de short té un interval i aquest resultat esta dins d'aquest interval), a la segona execució obtenim -30536 perquè el 35000 està fora del interval del short, al fer el casting estem ficant un integer a un short travès d'un casting. Quan fem el casting estem fent 
+A la primera execució obtenim s = 32000 (és a dir, que l'agafa perquè el tipus de dada de short té un interval i aquest resultat esta dins d'aquest interval), a la segona execució obtenim -30536 perquè el 35000 està fora del interval del short, al fer el casting estem retallant bits, al fer això ens queda un 1 a la esquerra dels bits, si és un 1 el número que ens dona és negatiu, si és zero el número . Quan fem el casting estem fent 
 
 #### Pregunta 5
 
