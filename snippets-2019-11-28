@@ -1,0 +1,27 @@
+	String intToBinaryWithSeparator(int n, String separator) {
+		String str = String.format("%032d", new java.math.BigInteger(Integer.toBinaryString(n)));
+
+		String[] as = str.split("(?<=\\G........)");
+
+		java.util.stream.Stream<String> streamIn = java.util.Arrays.stream(as);
+
+		java.util.stream.Stream<String> streamOut = streamIn.map(s -> {
+			java.lang.StringBuilder sb = new java.lang.StringBuilder(s);
+			sb.insert(4, '_');
+			return sb.toString();
+		});
+
+		return streamOut.collect(java.util.stream.Collectors.joining(separator));
+	}
+	String intToBin(int n) {
+		return intToBinaryWithSeparator(n, " , ");
+	}
+byte b0 = 122;
+byte b1 = 14;
+b0 + b1;
+char c = 'a';
+int n = c;
+short  s = (short)35000;
+var v = 5.0;
+var v0 = 5;
+var v1 = v + v0;

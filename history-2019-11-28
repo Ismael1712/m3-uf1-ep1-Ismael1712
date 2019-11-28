@@ -1,0 +1,18 @@
+/hsitory
+/history
+byte b0 = 122;
+byte b1 = 14;
+b0 + b1;
+char c = 'a';
+int n = c;
+short s = c;
+short s = (short)c;
+short s = (short)32000;
+short  s = (short)35000;
+var v = 5.0;
+var v0 = 5;
+var v1 = v + v0;
+/save snippets-2019-11-28
+/svae --history history-2019-11-28
+ --history history-2019-11-28
+/save --history history-2019-11-28
